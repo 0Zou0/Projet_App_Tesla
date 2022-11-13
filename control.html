@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <header>
+        <a href="index.html">
+            <button class="go_back"><</button>
+          </a> 
+        
+    </header>
+
+    <section class="controle">
+        <h1>Contrôles</h1>
+    </section>
+    
+    <img class="top_car" src="img/top_car.png" alt="voiture">
+    <section class="start">
+        <button class="btn_menu" href=""><ion-icon class="icon_button" name="flash"></ion-icon></ion-icon> </button>
+    </section>
+    <section class="end">
+        <ul class="menu">
+            <li class="control_cadena"><button class="btn_menu" href=""><ion-icon class="icon_button" name="lock-closed"></ion-icon></ion-icon> </button> </li>
+            <li class="control_red"><button class="btn_menu" href=""><ion-icon class="icon_button" name="aperture"></ion-icon></button></li>
+            <li class="control"><button class="btn_menu" href=""><ion-icon class="icon_button" name="flash"></ion-icon></button></li>
+            <li class="control"><button class="btn_menu" href=""><ion-icon class="icon_button" name="car-sport"></ion-icon></button></li>
+
+            <script>
+                let control = document.querySelector('.control_red');
+                control.onclick=function(){
+                    control.classList.toggle('active')
+                }
+                
+            </script>
+
+        </ul>
+    </section>
+
+
+    
+</body>
+</html>

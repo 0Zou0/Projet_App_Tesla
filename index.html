@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="simone">
+        <h1>Simone</h1>
+        <button class="profile_btn" href=""><ion-icon class="profile" name="person-circle"></ion-icon></button>
+    </header>
+
+    <section class="battery">
+        <ion-icon class="icon_battery" name="battery-dead-outline"></ion-icon>
+        <section class="prog_box"><progress value="30" max="100"></progress></section>
+        
+        <h2 class="percent">30%</h2>
+    </section>
+
+    <h2>Stationnée</h2>
+    
+    <img class="car" src="img/car.png" alt="voiture">
+    <section>
+        <ul class="menu">
+            <li class="control_cadena"><button class="btn_menu" href=""><ion-icon class="icon_button" name="lock-closed"></ion-icon></ion-icon> </button> </li>
+            <li class="control_red"><button class="btn_menu" href=""><ion-icon class="icon_button" name="aperture"></ion-icon></button></li>
+            <li class="control"><button class="btn_menu" href=""><ion-icon class="icon_button" name="flash"></ion-icon></button></li>
+            <li class="control"><button class="btn_menu" href=""><ion-icon class="icon_button" name="car-sport"></ion-icon></button></li>
+
+            <script>
+                let control = document.querySelector('.control_red');
+                control.onclick=function(){
+                    control.classList.toggle('active')
+                }
+                
+            </script>
+
+        </ul>
+    </section>
+
+
+    <nav>
+        <ul class="control_nav">
+            <nav class="vertical">
+                <ul class="menu_vertical">
+                    <li class="li"><a  class="box" href="control.html"><ion-icon class="imageflex" name="lock-closed"></ion-icon><span class="lientype1">Contrôles</span></img><span class="arrow">></span></a></li>
+                    <li class="li"><a  class="box" href=""><ion-icon class="imageflex" name="lock-closed"></ion-icon><span class="lientype1">Ventilation </br><small> Intérieur 23°C</small></span></img><span class="arrow">></span></a></li>
+                    <li class="li"><a  class="box" href=""><ion-icon class="imageflex" name="lock-closed"></ion-icon><span class="lientype1">Sécurite et conducteur</span></img><span class="arrow">></span></a></li>
+                    <li class="li"><a  class="box" href=""><ion-icon class="imageflex" name="lock-closed"></ion-icon><span class="lientype1">Contrôles</span></img><span class="arrow">></span></a></li>
+                    <li class="li"><a  class="box" href=""><ion-icon class="imageflex" name="lock-closed"></ion-icon><span class="lientype1">Ventilation </br><small> Intérieur 23°C</small></span></img><span class="arrow">></span></a></li>
+                    <li class="li"><a  class="box" href=""><ion-icon class="imageflex" name="lock-closed"></ion-icon><span class="lientype1">Sécurite et conducteur</span></img><span class="arrow">></span></a></li>
+                    <li class="li"><a  class="box" href=""><ion-icon class="imageflex" name="lock-closed"></ion-icon><span class="lientype1">Contrôles</span></img><span class="arrow">></span></a></li>
+                    <li class="li"><a  class="box" href=""><ion-icon class="imageflex" name="lock-closed"></ion-icon><span class="lientype1">Ventilation </br><small> Intérieur 23°C</small></span></img><span class="arrow">></span></a></li>
+                    <li class="li"><a  class="box" href=""><ion-icon class="imageflex" name="lock-closed"></ion-icon><span class="lientype1">Sécurite et conducteur</span></img><span class="arrow">></span></a></li>
+                    <li class="li"><a  class="box" href=""><ion-icon class="imageflex" name="lock-closed"></ion-icon><span class="lientype1">Contrôles</span></img><span class="arrow">></span></a></li>
+                    <li class="li"><a  class="box" href=""><ion-icon class="imageflex" name="lock-closed"></ion-icon><span class="lientype1">Ventilation </br><small> Intérieur 23°C</small></span></img><span class="arrow">></span></a></li>
+                    <li class="li"><a  class="box" href=""><ion-icon class="imageflex" name="lock-closed"></ion-icon><span class="lientype1">Sécurite et conducteur</span></img><span class="arrow">></span></a></li>
+            </ul>
+        </ul>
+    </nav>
+</body>
+</html>
